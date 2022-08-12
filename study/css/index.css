@@ -1,0 +1,480 @@
+/* 1. 浮动/display 2. 盒子模型 3. 文字样式*/
+/* 以下5个选择器以后直接复制粘贴 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 内减模式 */
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+/* 以下为自写区域 */
+body {
+    background-color: #f3f5f7;
+}
+
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 头部：将具体内容看作header */
+.header {
+	height: 42px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    margin: 30px auto;
+}
+
+/* logo */
+h1 {
+    float: left;
+}
+
+/* 导航 */
+.nav {
+    float: left;
+    /* 纯文字区域可以不设置宽度 */
+    height: 42px;
+    margin-left: 70px;
+}
+
+.nav li {
+    float: left;
+    margin-right: 26px;
+}
+
+.nav li a {
+    float: left;
+    display: block;
+    padding: 0 9px;
+    height: 42px;
+    line-height: 42px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: #050505;
+}
+
+.nav li a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索框 */
+.search {
+    float: left;
+    margin-left: 59px;
+	width: 412px;
+	height: 42px;
+	border: 1px solid #00a4ff;
+}
+
+.search form input {
+    float: left;
+    /* 左边的间距用padding!!! */
+    background-color: #f3f5f7;
+    padding-left: 20px;
+    width: 358px;
+    height: 40px;
+    border: 0;
+}
+
+/* 输入时不要边框 */
+.search form input:focus {
+    outline: none;
+}
+
+/* 控制 placeholder 的样式用 :: */
+.search form input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+/* 搜索按钮，背景图只做装饰 */
+.search button  {
+    float: right;
+    width: 50px;
+    height: 40px;
+    background-image: url(../images/btn.png);
+    border: 0;
+}
+
+/* 用户头像&账号 */
+.user {
+    float: left;
+    margin-left: 30px;
+    /* 一般用户名区域不设置宽度！因为长度不确定 */
+    height: 42px;
+    /* 父元素（inline-block/block）必须含有line-height（inline元素有无皆可），子元素中的（inline-block/inline元素）vertical-align才能起作用 */
+    line-height: 42px;
+}
+
+.user img {
+    /* 调节图片垂直对齐方式 */  
+    vertical-align: middle;
+}
+
+.user a {
+    float: right;
+    display: block;
+    margin-left: 6px;
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* 轮播图区域：不写宽度 */
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+/* 设置轮播图片背景. 注意选择器的写法 */
+.banner .wrapper {
+    height: 420px;
+    background-image: url(../images/banner2_20190819_210028.png);
+}
+
+/* 左侧菜单 */
+.banner .menu {
+    float: left;
+    /* padding: 20px; */
+    padding: 10px 20px;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* 在 .menu 中规定行高拉开间距，span下面两个li选择器就不用写了 */
+    line-height: 44px;
+}
+
+/* 让小尖头往右浮动 */
+.banner .menu span {
+    float: right;
+}
+
+/* 也可以在 .menu 中规定行高拉开间距 */
+/* .banner .menu ul li { 
+    margin-bottom: 24px;
+} */
+
+/* .banner .menu ul li:nth-child(9) {
+    margin-bottom: 0;
+} */
+
+.banner .menu ul li a {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.banner .menu ul li a:hover  {
+    color: #00b4ff;
+}
+
+/* 右侧课程信息 */
+.banner .classInfo {
+    float: right;
+    margin-top: 50px;
+    width: 228px;
+    height: 300px;
+    background-color: #fff;
+}
+
+.banner .classInfo h2 {
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    line-height: 48px;
+}
+
+/* .banner .classInfo li {
+    padding: 10px 1px;
+    margin: 0 18px;
+    height: 65px;
+    border-bottom: 2px solid #e5e5e5;
+    font-weight: 400;
+}
+
+.banner .classInfo li .continue {
+    font-size: 16px;
+    color: #4e4e4e;
+    vertical-align: top;
+}
+
+.banner .classInfo li .subject {
+    font-size: 14px;
+    color: #4e4e4e;
+}
+
+.banner .classInfo li .now {
+    font-size: 12px;
+    color: #a5a5a5;
+} */
+
+.banner .classInfo .content {
+    padding: 0px 18px;
+}
+
+.banner .classInfo .content dl {
+    padding: 12px 1px;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.banner .classInfo .content dl dt {
+    font-size: 16px;
+    color: #4e4e4e;
+    line-height: 20px;
+}
+
+.banner .classInfo .content dl a{
+    font-size: 14px;
+    color: #4e4e4e;
+    line-height: 20px;
+}
+
+.banner .classInfo .content dl dd {
+    font-size: 12px;
+    color: #a5a5a5;
+    line-height: 20px;
+}
+
+.banner .classInfo .more {
+    display: block;
+    margin: 4px 14px;
+    /* 也可以写 margin: 4px auto; */
+    width: 200px;
+    height: 42px;
+    border: solid 1px #00a4ff;
+    font-size: 16px;
+	font-weight: 700;
+    letter-spacing: 2px;
+    text-align: center;
+    line-height: 42px;
+	color: #00a4ff;
+}
+
+/* 精品推荐导航区域 */
+.recommend {
+    height: 60px;
+    margin-top: 8px;
+    padding: 21px 26px 21px 34px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0 rgba(118,118,118,0.2);
+}
+
+.recommend h3 {
+    float: left;
+    margin-right: 32px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.recommend .content li {
+    float: left;
+    width: 117px;
+    border-left: 1px solid #bfbfbf;
+    text-align: center;
+}
+
+.recommend .content li a {
+    color: #050505;
+}
+
+.recommend .change {
+    display: block;
+    float: right;
+    font-size: 14px;
+    color: #00a4ff;
+    line-height: 20.8px;
+}
+
+/* 精品推荐课程显示区域 */
+.lesson {
+    /* 这种多个一样的盒子排列的区域不合适设置高度，以后有可能会变少变多！ */
+    /* height: 595px; */
+    margin-top: 37px;
+}
+
+.lesson .head {
+    height: 19px;
+    margin-bottom: 21px;
+}
+
+.lesson .head h2 {
+    float: left;
+    font-size: 20px;
+    color: #494949;
+    font-weight: 400;
+}
+
+.lesson .head a {
+    display: block;
+    float: right;
+    margin-top: 8px;
+    margin-right: 30px;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.lesson .content {
+    margin-top: 21px;
+}
+
+.lesson .content li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-top: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+}
+
+.lesson .content li a {
+    display: block;
+    width: 228px;
+    height: 270px;
+}
+
+.lesson .content li a:hover {
+    box-shadow: 0 2px 5px 0 rgba(118,118,118,0.5);
+}
+
+.lesson .content li:nth-child(5n) {
+    margin-right: 0;
+} 
+
+.lesson .content li:nth-child(-n+5) {
+    margin-top: 0;
+} 
+
+.lesson .content a img {
+    width: 228px;
+}
+
+.lesson .content a dt {
+    width: 184px;
+    height: 32px;
+    margin-top: 24px;
+    margin-left: 22px;
+    font-size: 14px;
+    color: #050505;
+    line-height: 20px;
+}
+
+.lesson .content a dd {
+    height: 11px;
+    margin-top: 20px;
+    margin-left: 22px;
+    font-size: 12px;
+    color: #999999;
+} 
+
+.lesson .content a dd span {
+    color: #ff7c2d;
+}
+
+/* 版权区域 */
+.footer {
+    height: 417px;
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.footer .copyright {
+    float: left;
+}
+
+.footer .copyright img {
+    margin-left: 18px;
+    margin-top: 32px;
+}
+
+.footer .copyright p {
+    margin-top: 22px;
+    margin-left: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #666;
+}
+
+.footer .copyright a{
+    display: block;
+    width: 120px;
+    height: 36px;
+    margin-top: 15px;
+    margin-left: 18px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 34px;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.footer .links {
+    float: right;
+    margin-top: 33px;
+    width: 538px;
+    height: 417px;
+    color: #333;
+    line-height: 21px;
+}
+
+.footer .links .about {
+    float: left;
+    margin-right: 140px;
+}
+
+.footer .links .help {
+    float: left;
+    margin-right: 118px;
+}
+
+.footer .links .cooperation {
+    float: left;
+}
+
+.footer .links dt {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.footer .links dd {
+    font-size: 12px;
+}
+
+.footer .links dd a {
+    color: #333;
+}
+
+/* 课程图片右上角定位小图 */
+.lesson .content li {
+    position: relative;
+}
+
+.lesson .content li .new {
+    position: absolute;
+    right: -4px;
+    top: 4px;
+    width: 42px;
+    height: 24px;
+}

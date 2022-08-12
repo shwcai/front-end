@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学成在线</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- 网站的首页，所有网站的首页都叫index.html -->
+    <!-- 布局从外到内，从上到下，从左到右 -->
+
+    <!-- 头部header：负责头部区域的样式，wrapper只负责版心居中 -->
+    <div class="header wrapper">
+        <!-- 图片到底多大看设计师给的切图，PxCook中不一定准 -->
+        <!-- 一般公司的 logo 的布局是 h1>a>img -->
+        <h1>
+            <a href="#"><img src="./images/logo.png" alt=""></a>
+        </h1>
+
+        <!-- 导航：单独一个div -->
+        <div class="nav">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">课程</a></li>
+                <li><a href="#">职业规划</a></li>
+            </ul>
+        </div>
+        
+        <!-- 搜索 -->
+        <div class="search">
+            <form action="">
+                <input type="text" placeholder="输入关键词">
+            </form>
+            <!-- 搜索按钮：工作中一般用 background-image 而不用 img -->
+            <button></button>
+        </div>
+
+        <!-- 用户头像&账号 -->
+        <div class="user">
+            <!-- 头像用img -->
+            <img src="./images/user.png" alt="">
+            <a href="#">qq-leishui</a>
+        </div>
+    </div>
+
+    <!-- 轮播图区域：通栏盒子. 注意div嵌套规则 -->
+    <div class="banner">
+        <!-- 放轮播图片 -->
+        <div class="wrapper">
+            <!-- 也可以取名字为 left 和 right -->
+            <div class="menu">
+                <ul>
+                    <!-- 设计师没给小尖箭头的图片，可以用大于号代替 -->
+                    <li><a href="#">前端开发<span>></span></a></li> 
+                    <li><a href="#">后端开发<span>></span></a></li>
+                    <li><a href="#">移动开发<span>></span></a></li>
+                    <li><a href="#">人工智能<span>></span></a></li>
+                    <li><a href="#">商业预测<span>></span></a></li>
+                    <li><a href="#">云计算&大数据<span>></span></a></li>
+                    <li><a href="#">运维&测试<span>></span></a></li>
+                    <li><a href="#">UI设计<span>></span></a></li>
+                    <li><a href="#">产品<span>></span></a></li>
+                </ul>
+            </div>
+            <div class="classInfo">
+                <h2>我的课程表</h2>
+                <div class="content">
+                    <!-- <ul>
+                        <li>
+                            <span class="continue">继续学习</span>
+                            <a href="#" class="subject">程序设计语言</a><br>
+                            <span class="now">正在学习-使用对象</span>
+                        </li>
+                        <li>
+                            <span class="continue">继续学习</span>
+                            <a href="#" class="subject">程序设计语言</a><br>
+                            <span class="now">正在学习-使用对象</span>
+                        </li>
+                        <li>
+                            <span class="continue">继续学习</span>
+                            <a href="#" class="subject">程序设计语言</a><br>
+                            <span class="now">正在学习-使用对象</span>
+                        </li>
+                    </ul> -->
+                    <!-- 有主题有描述用 dl 比较好 -->
+                    <dl>
+                        <dt>继续学习 <a href="#">程序设计语言</a></dt>
+                        <dd>正在学习-使用对象</dd>
+                    </dl>
+                    <dl>
+                        <dt>继续学习 <a href="#">程序设计语言</a></dt>
+                        <dd>正在学习-使用对象</dd>
+                    </dl>
+                    <dl>
+                        <dt>继续学习 <a href="#">程序设计语言</a></dt>
+                        <dd>正在学习-使用对象</dd>
+                    </dl>
+                </div>
+                <a href="#" class="more">全部课程</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 精品推荐导航 -->
+    <div class="recommend wrapper">
+        <h3>精品推荐</h3>
+        <div class="content">
+            <ul>
+                <li><a href="#">JQuery</a></li>
+                <li><a href="#">Spark</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">JavaWeb</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">JavaWeb</a></li>
+            </ul>
+        </div>
+        <a href="#" class="change">修改兴趣</a>
+    </div>
+    
+    <!-- 精品推荐课程 -->
+    <div class="lesson wrapper">
+        <div class="head">
+            <h2>精品推荐</h2>
+            <a href="#">查看全部</a>
+        </div>
+        <!-- 这种多个一样的盒子排列的区域不合适设置高度，以后有可能会变少变多！ -->
+        <!-- 盒子浮动了但没设置高度，会影响下面盒子的位置。所以此处的盒子需要清除浮动！ -->
+        <div class="content clearfix">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                        <dl>
+                            <dt>Think PHP 5.0 博客系统实战项目演练</dt>
+                            <dd><span>高级</span> • 1125人在学习</dd>
+                        </dl>
+                        <!-- 定位的上标 小图 -->
+                        <img src="./images/new.png" alt="" class="new">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                        <dl>
+                            <dt>Think PHP 5.0 博客系统实战项目演练</dt>
+                            <dd><span>高级</span> • 1125人在学习</dd>
+                        </dl>
+                        <img src="./images/new.png" alt="" class="new">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                        <dl>
+                            <dt>Think PHP 5.0 博客系统实战项目演练</dt>
+                            <dd><span>高级</span> • 1125人在学习</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                        <dl>
+                            <dt>Think PHP 5.0 博客系统实战项目演练</dt>
+                            <dd><span>高级</span> • 1125人在学习</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                        <dl>
+                            <dt>Think PHP 5.0 博客系统实战项目演练</dt>
+                            <dd><span>高级</span> • 1125人在学习</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                        <dl>
+                            <dt>Think PHP 5.0 博客系统实战项目演练</dt>
+                            <dd><span>高级</span> • 1125人在学习</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                        <dl>
+                            <dt>Think PHP 5.0 博客系统实战项目演练</dt>
+                            <dd><span>高级</span> • 1125人在学习</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                        <dl>
+                            <dt>Think PHP 5.0 博客系统实战项目演练</dt>
+                            <dd><span>高级</span> • 1125人在学习</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                        <dl>
+                            <dt>Think PHP 5.0 博客系统实战项目演练</dt>
+                            <dd><span>高级</span> • 1125人在学习</dd>
+                        </dl>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/pic.png" alt="">
+                        <dl>
+                            <dt>Think PHP 5.0 博客系统实战项目演练</dt>
+                            <dd><span>高级</span> • 1125人在学习</dd>
+                        </dl>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 版权信息 -->
+    <!-- 上面盒子浮动了但没设置高度，会影响下面盒子的位置。所以上面的盒子需要清除浮动！ -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="copyright">
+                <img src="./images/logo.png" alt="">
+                <p>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。<br>&copy;2017年XTCG Inc.保留所有权利。-沪ICP备15025210号</p>
+                <a href="#">下载APP</a>
+            </div>
+            <div class="links">
+                <dl class="about">
+                    <dt>关于学成网</dt>
+                    <dd><a href="">关于</a></dd>
+                    <dd><a href="">管理团队</a></dd>
+                    <dd><a href="">工作机会</a></dd>
+                    <dd><a href="">客户服务</a></dd>
+                    <dd><a href="">帮助</a></dd>
+                </dl>
+                <dl class="help">
+                    <dt>新手指南</dt>
+                    <dd><a href="">如何注册</a></dd>
+                    <dd><a href="">如何选课</a></dd>
+                    <dd><a href="">如何拿到毕业证</a></dd>
+                    <dd><a href="">学分是什么</a></dd>
+                    <dd><a href="">考试未通过怎么办</a></dd>
+                </dl>
+                <dl class="cooperation">
+                    <dt>合作伙伴</dt>
+                    <dd><a href="">合作机构</a></dd>
+                    <dd><a href="">合作导师</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
