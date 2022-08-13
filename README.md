@@ -5,8 +5,8 @@
 
 **目前只有html5+css3静态网页内容**
 
--study
+- study
 >此文件夹是学成在线网页项目。
 
--xtx-pc-client
+- xtx-pc-client
 >此项目是小兔鲜电商网站项目，目前只有`index.html`的一部分。
