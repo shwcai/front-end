@@ -1,0 +1,425 @@
+/* 版心 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 顶部 */
+.top {
+    height: 52px;
+    background-color: #333;
+}
+
+.top .nav {
+    float: right;
+}
+
+.top .nav li {
+    float: left;
+    width: 88px;
+    height: 52px;
+}
+
+.top .nav li:last-child {
+    width: 78px;
+}
+
+.top .nav li a {
+    display: block;
+    height: 14px;
+    margin-top: 19px;
+    text-align: center;
+    line-height: 14px;
+    font-size: 14px;
+    color: #dcdcdc;
+    border-right: 1px solid #666;
+}
+
+.top .nav li:last-child a {
+    float: right;
+    border-right: 0;
+    text-align: right;
+}
+
+.top .nav li:last-child span {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 18px;
+    width: 11px;
+    height: 16px;
+    background-image: url(../images/sprites.png);
+    background-position: -160px -70px;
+}
+
+.header {
+    height: 130px;
+    background-color: #fff;
+}
+
+.header .content {
+    width: 1240px;
+}
+
+.header .content img {
+    display: block;
+    float: left;
+    width: 208px;
+    height: 70px;
+    margin-left: 24px;
+    margin-top: 28px;
+}
+
+.header .content .nav {
+    float: left;
+    margin-left: 40px;
+    margin-top: 50px;
+    height: 32px;
+    line-height: 32px;
+}
+
+.header .content .nav li {
+    float: left;
+    padding-right: 47px;
+}
+
+.header .content .nav li a {
+    display: block;
+    height: 32px;
+}
+
+.header .content .nav li a:hover {
+    color: #27ba9b;
+    border-bottom: 1px solid #27ba9b;
+}
+
+.header .content .search {
+    float: left;
+    margin-left: 35px;
+    margin-top: 54px;
+    width: 172px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.header .content .search span {
+    display: block;
+    float: left;
+    margin-top: 1px;
+    margin-left: 2px;
+    width: 17px;
+    height: 17px;
+    background-image: url(../images/sprites.png);
+    background-position: -80px -70px;
+}
+
+.header .content .search form input {
+    float: left;
+    padding-left: 11px;
+    padding-top: 5px;
+    width: 140px;
+}
+
+.header .content .search input::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.header .content .shopping {
+    display: block;
+    float: left;
+    margin-left: 15px;
+    margin-top: 58px;
+    width: 22px;
+    height: 22px;
+    background-image: url(../images/sprites.png);
+    background-position: -120px -70px;
+}
+
+.footer {
+    padding-top: 70px;
+    padding-bottom: 43px;
+    height: 302px;
+    background-color: #fff;
+}
+
+.footer .left {
+    float: left;
+    margin-left: 57px;
+    padding-top: 9px;
+    height: 189px;
+    border-right: 2px solid #f2f2f2;
+}
+
+.footer .left .client {
+    float: left; 
+    margin-right: 118px;
+    width: 192px;
+    height: 143px;
+}
+
+.footer .left .follow {
+    float: left;
+    margin-right: 92px;
+    width: 192px;
+    height: 143px;
+}
+
+.footer .left .app {
+    float: left;
+    margin-right: 33px;
+    width: 247px;
+    height: 156px;
+}
+
+.footer .right {
+    float: left;
+    margin-top: 9px;
+    margin-left: 74px;
+    width: 160px;
+    height: 122px;
+}
+
+.footer h6 {
+    height: 16px;
+    color: #999;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer .left li a {
+    display: block;
+    float: left;
+    position: relative;
+    margin-top: 35px;
+    margin-right: 6px;
+    width: 93px;
+    height: 92px;
+    border: 1px solid #eee;
+}
+
+.footer .left li .noright {
+    margin-right: 0;
+}
+
+.footer .left li:last-child .qrcode {
+    display: block;
+    float: left;
+    position: relative;
+    margin-top: 24px;
+    width: 116px;
+    height: 116px;
+    border: 1px solid #eee;
+}
+
+.footer .left .app dl {
+    float: left;
+    margin-top: 37px;
+}
+
+.footer .left .app dt {
+    margin-left: 26px;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer .left .app .download {
+    display: block;
+    margin-top: 16px;
+    margin-left: 22px;
+    width: 103px;
+    height: 32px;
+    background-color: #27ba9b;
+    text-align: center;
+    font-size: 14px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.footer .left p {
+    position: absolute;
+    bottom: 19px;
+    width: 93px;
+    height: 14px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.footer .left .onlineSupport {
+    display: block;
+    width: 29px;
+    height: 27px;
+    margin-top: 22px;
+    margin-left: 32px;
+    background-image: url(../images/sprites.png);
+    background-position: -250px -70px;
+}
+
+.footer .left .feedback {
+    display: block;
+    width: 29px;
+    height: 29px;
+    margin-top: 23px;
+    margin-left: 30px;
+    background-image: url(../images/sprites.png);
+    background-position: -350px -70px;
+}
+
+.footer .left .wechat {
+    display: block;
+    width: 36px;
+    height: 29px;
+    margin-top: 19px;
+    margin-left: 29px;
+    background-image: url(../images/sprites.png);
+    background-position: -205px -15px;
+}
+
+.footer .left .weibo {
+    display: block;
+    width: 36px;
+    height: 29px;
+    margin-top: 19px;
+    margin-left: 32px;
+    background-image: url(../images/sprites.png);
+    background-position: -350px -15px;
+}
+
+.footer .left .qrcode img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 108px;
+    height: 108px;
+}
+
+.footer .right dl {
+    margin-top: 55px;
+    text-align: center;
+}
+
+.footer .right dl dt {
+    font-size: 22px;
+    color: #666;
+}
+
+.footer .right dl dd {
+    line-height: 30px;
+    font-size: 15px;
+    color: #999;
+}
+
+.copyright {
+    position: relative;
+    height: 344px;
+    background-color: #333;
+}
+
+.copyright .line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1460px;
+    height: 2px;
+    background-color: #434343;  
+}
+
+.copyright .up {
+    height: 171px;
+    padding-top: 60px;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.copyright .up li {
+    float: left;
+    height: 58px;
+}
+
+.copyright .up li:first-child {
+    margin-right: 298px;
+}
+
+.copyright .up li:last-child {
+    margin-left: 298px;
+}
+
+.copyright .up li .nicePrice {
+    display: block;
+    float: left;
+    height: 58px;
+    width: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: 0 0;
+}
+
+.copyright .up li .fastLogistics {
+    display: block;
+    float: left;
+    height: 58px;
+    width: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -130px 0;
+}
+
+.copyright .up li .freshQuality {
+    display: block;
+    float: left;
+    height: 58px;
+    width: 58px;
+    background-image: url(../images/sprites.png);
+    background-position: -65px 0;
+}
+
+.copyright .up li p {
+    float: left;
+    margin-left: 19px;
+    margin-top: 8px;
+    font-size: 28px;
+    color: #fff;
+}
+
+.copyright .down {
+    position: relative;
+    margin-top: 44px;
+    height: 58px;   
+}
+
+.copyright .down ul {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+    height: 15px;
+}
+
+.copyright .down li {
+    float: left;
+    height: 15px;
+    line-height: 15px;
+    padding: 0 11px;
+    border-right: 1px solid #999;
+}
+
+.copyright .down li:last-child {
+    border-right: 0;
+}
+
+.copyright .down a {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+}
+
+.copyright .down p {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%, -80%);
+    font-size: 14px;
+    color: #999;
+}
