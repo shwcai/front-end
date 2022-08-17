@@ -273,7 +273,7 @@
     margin-top: 19px;
     margin-left: 29px;
     background-image: url(../images/sprites.png);
-    background-position: -205px -15px;
+    background-position: -250px -15px;
 }
 
 .footer .left .weibo {
@@ -284,6 +284,22 @@
     margin-left: 32px;
     background-image: url(../images/sprites.png);
     background-position: -350px -15px;
+}
+
+.footer .left .onlineSupport:hover {
+    background-position: -205px -70px;
+}
+
+.footer .left .feedback:hover {
+    background-position: -300px -70px;
+}
+
+.footer .left .wechat:hover {
+    background-position: -205px -15px;
+}
+
+.footer .left .weibo:hover {
+    background-position: -300px -15px;
 }
 
 .footer .left .qrcode img {
