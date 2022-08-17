@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>确认订单</title>
+    <link rel="stylesheet" href="./lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/orders.css">
+</head>
+<body>
+    <!-- 主体内容：滑动查看 -->
+    <div class="main">
+        <!-- 用户信息 -->
+        <div class="pannel user_msg">
+            <div class="location">
+                <!-- 字体图标单独用 i 标签 -->
+                <i class="iconfont icon-location"></i>
+            </div>
+            <div class="user">
+                <div class="top">
+                    <span class="name">林丽</span>
+                    <span class="phone">18500667882</span>
+                </div>
+                <div class="bottom">
+                    北京市  海淀区  中关村软件园   信息科技大厦1号
+楼410#
+                </div>
+            </div>
+            <div class="more">
+                <i class="iconfont icon-more"></i>
+            </div>
+        </div>
+        <!-- 用户信息 -->
+
+        <!-- 商品信息 -->
+        <div class="pannel goods">
+            <!-- 商品图 -->
+            <div class="pic">
+                <a href="#"><img src="./uploads/pic.png" alt=""></a>
+            </div>
+            <!-- 购买信息（商品名，标签，价格） -->
+            <div class="info">
+                <div class="txt">
+                    康尔贝 非接触式红外体温仪
+                    领券立减30元 婴儿级材质 测温…
+                </div>
+                <div class="tag">
+                    <span>粉色</span>
+                    <span>红外体温计</span>    
+                </div>
+                <div class="price">
+                    <span class="red">¥<i class="price_now">266</i></span>
+                    <span class="price_before">¥<i>290</i></span>
+                </div>
+            </div>
+            <!-- 购买数量 -->
+            <div class="count">
+                <i class="iconfont icon-x"></i><span>1</span>
+            </div>
+        </div>
+        <!-- 商品信息 -->
+
+        <!-- 买卖方式（快递，备注，支付方式） -->
+        <!-- <div class="pannel rest"></div> -->
+        <!-- header nav section footer 移动端尽量用这些标签 -->
+        <section class="pannel rest">
+            <div>
+                <h5>配送方式</h5>
+                <p>顺丰快递</p>
+            </div>
+            <div>
+                <h5>买家备注</h5>
+                <p>希望可以尽快发货，谢谢~</p>
+            </div>
+            <div>
+                <h5>支付方式</h5>
+                <p>支付宝<i class="iconfont icon-more"></i></p>
+                
+            </div>
+        </section>
+        <!-- 买卖方式（快递，备注，支付方式） -->
+
+        <!-- 价格,优惠信息 -->
+        <section class="pannel sum_price">
+            <div>
+                <h5>商品总价</h5>
+                <p>￥<i>299.00</i></p>
+            </div>
+            <div>
+                <h5>运费</h5>
+                <p>￥<i>0.00</i></p>
+            </div>
+            <div>
+                <h5>折扣</h5>
+                <p>-￥<i>30.00</i></p>
+            </div>
+        </section>
+        <!-- 价格,优惠信息 -->
+    </div>
+    <!-- 主体内容：滑动查看 -->
+
+
+    <!-- 底部支付：固定定位 -->
+    <div class="pay">
+        <!-- 总价 -->
+        <div class="left">
+            合计：<span class="red">￥<i>266.00</i></span>
+        </div>
+        <!-- 提交订单 -->
+        <div class="right">
+            <a href="#">去支付</a>
+        </div>
+    </div>
+    <!-- 底部支付：固定定位 -->
+</body>
+</html>

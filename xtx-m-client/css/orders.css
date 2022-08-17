@@ -1,0 +1,241 @@
+body {
+    background-color: #f7f7f8;
+}
+
+/* 公共样式 */
+.red {
+    color: #cf4444;
+}
+
+.pannel {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* 主体内容：滑动查看 */
+.main {
+    margin: 12px 11px 88px;
+}
+
+/* 用户信息 */
+.main .user_msg {
+    display: flex;
+    /* 侧轴居中 */
+    align-items: center;
+    padding: 15px 0 15px 11px;
+}
+
+.main .user_msg .location {
+    width: 30px;
+    height: 30px;
+    margin-right: 11px;
+    background-image: linear-gradient(90deg, 
+		#6fc2aa 5%, 
+		#54b196 100%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+
+.main .user_msg .user {
+    /* 剩余部分都是中间盒子的区域 */
+    flex: 1;
+}
+
+.main .user_msg .more {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    color: #808080;
+}
+
+.main .user_msg .user .top {
+    display: flex;
+}
+
+.main .user_msg .user .top .name {
+    overflow: hidden;
+    width: 55px;
+    height: 22px;
+    /* margin-right: 18px; */
+    font-size: 15px;
+}
+
+.main .user_msg .user .top .phone {
+    font-size: 13px;
+    /* 垂直居中 */
+    line-height: 22px;
+}
+
+.main .user_msg .user .bottom {
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 18px;
+}
+/* 用户信息 */
+
+/* 商品 */
+.main .goods {
+    display: flex;
+    padding: 11px 0 11px 11px;
+}
+
+.main .goods .pic {
+    /* base.css 中定义了 img 的样式为 width:100%，故此处可以直接定义 img 的父级 pic 的宽高 */
+    width: 85px;
+    height: 85px;
+    margin-right: 10px;
+}
+
+.main .goods .info {
+    flex: 1;
+}
+
+.main .goods .info .txt {
+    font-size: 13px;
+    line-height: 19px;
+    color: #262626;
+}
+
+.main .goods .info .tag {
+    width: 98px;
+	height: 18px;
+    padding: 1px 2px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+	background-color: #f7f7f8;
+	border-radius: 2px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #888;
+}
+
+.main .goods .info .tag span:first-child {
+    margin-right: 4px;
+}
+
+.main .goods .info .price {
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+}
+
+.main .goods .info .price .price_now {
+    font-size: 16px;
+}
+
+.main .goods .info .price .price_before {
+    margin-left: 5px;
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+
+.main .goods .count {
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+    color: #262626;
+}
+/* 商品 */
+
+/* 买卖方式（快递，备注，支付方式） */
+.main .rest,
+.main .sum_price {
+    padding: 15px;
+}
+
+.main .rest div,
+.main .sum_price div {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.main .rest div:nth-child(2n+1) {
+    justify-content: space-between;
+}
+
+.main .rest div:last-child,
+.main .sum_price div:last-child {
+    margin-bottom: 0;
+}
+
+.main .rest div:nth-child(2) p {
+    margin-left: 18px;
+    font-size: 12px;
+    color: #989898;
+}
+
+.main .rest div h5,
+.main .rest div p,
+.main .sum_price div h5,
+.main .sum_price div p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #262626;
+    line-height: 21px;
+}
+
+.main .rest div p i {
+    margin-left: 3px;
+    font-size: 12px;
+    color: #808080;
+}
+/* 买卖方式（快递，备注，支付方式） */
+
+/* 价格,优惠信息 */
+/* 有很多布局样式和上一个盒子一样，直接用并集选择器 */
+.main .sum_price div {
+    justify-content: space-between;
+}
+
+.main .sum_price div:last-child p {
+    color: #cf4444;
+}
+/* 价格,优惠信息 */
+
+/* 主体内容：滑动查看 */
+
+
+/* 底部支付：固定定位 */
+.pay {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 0 10px;
+    width: 100%;
+    height: 79px;
+    background-color: #fff;
+}
+
+.pay .left {
+    font-size: 12px;
+}
+
+.pay .left i {
+    font-size: 20px;
+}
+
+.pay .right a{
+    display: block;
+    width: 90px;
+    height: 35px;
+    background-image: linear-gradient(90deg, 
+		#6fc2aa 5%, 
+		#54b196 100%);
+    border-radius: 3px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+}
+/* 底部支付：固定定位 */
